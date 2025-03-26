@@ -40,8 +40,8 @@ class LinkedList {
         std::unique_ptr<node> next;
         node* prev;
 
-        explicit node(T&& data) : data(std::move(data)), next(nullptr) { prev = nullptr; } // move
-        explicit node(const T& data) : data(data), next(nullptr) { prev = nullptr; } // copy
+        explicit node(T&& data) : data(std::move(data)), next(nullptr), prev(nullptr) {} // move
+        explicit node(const T& data) : data(data), next(nullptr), prev(nullptr) {} // copy
 
         ~node() {
             // tab indentation is to make LinkedList clearing more clear & segmented
