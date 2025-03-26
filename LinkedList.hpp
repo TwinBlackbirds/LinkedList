@@ -239,16 +239,7 @@ class LinkedList {
         --this->count;
         return result;
     }
-    //
-    // int count() {
-    //     int count = 0;
-    //     node* current = this->first.get();
-    //     while (current != nullptr) {
-    //         count++;
-    //         current = current->next.get();
-    //     }
-    //     return count;
-    // }
+
     private:
 
     std::string to_format_string() {
